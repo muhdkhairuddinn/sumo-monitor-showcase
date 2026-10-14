@@ -29,5 +29,6 @@ A Chrome extension I built during my internship in a security operations team. T
 - Automating someone else's web app means waiting for the page to be ready instead of trusting fixed delays.
 - Text that comes from a page or from a threat-intel report is untrusted. I went back later and escaped it before it goes into the overlays, and cut the extension's access down to the three sites it needs.
 - A clean reputation score is not proof an IP is safe, so the bot hands anything unclear to a human.
+- Testing a browser extension against a SIEM I can't share means building a fake one. I made a mock page and drove the browser with scripts, which found a real bug: tickets that arrived together were skipped. Fixed now.
 
 Made by **KH4I**
